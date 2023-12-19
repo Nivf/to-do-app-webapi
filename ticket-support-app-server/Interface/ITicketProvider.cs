@@ -3,7 +3,7 @@ using Ticket_support_app_server.Models;
 
 namespace Ticket_support_app_server.Interface
 {
-    public interface ITicketProvider :IServiceProvider
+    public interface ITicketProvider
     {
         Task<IEnumerable<Ticket>> GetAllTickets();
         Task<Ticket> AddTicket(Ticket ticket);
