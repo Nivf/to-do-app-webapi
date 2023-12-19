@@ -44,11 +44,6 @@ namespace Ticket_support_app_server.Providers
             return await dbContext.Tickets.ToListAsync();
         }
 
-        public object? GetService(Type serviceType)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<Ticket> DeleteTicket(Guid id)
         {
             var ticket = await dbContext.Tickets.FindAsync(id);
